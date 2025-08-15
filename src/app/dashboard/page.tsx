@@ -101,9 +101,8 @@ export default function DemoPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {mockBuyerProfiles.slice(0, 6).map((buyer) => (
-                  <div className="hover:scale-105 transition-transform duration-300">
+                  <div key={buyer.id} className="hover:scale-105 transition-transform duration-300">
                     <BuyerCard 
-                      key={buyer.id} 
                       buyer={buyer} 
                       onAccept={() => alert('Contact initiated!')}
                       onReject={() => alert('Buyer rejected')}

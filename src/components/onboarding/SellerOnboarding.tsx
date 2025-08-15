@@ -54,7 +54,7 @@ export const SellerOnboarding: React.FC = () => {
   ];
   const router = useRouter();
 
-  const onSubmit = (data: SellerOnboardingData) => {
+  const onSubmit = () => {
     if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
     } else {

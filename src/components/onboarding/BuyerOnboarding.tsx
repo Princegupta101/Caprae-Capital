@@ -60,7 +60,7 @@ export const BuyerOnboarding: React.FC = () => {
   // Next.js router for redirect
   const router = useRouter();
 
-  const onSubmit = (data: BuyerOnboardingData) => {
+    const onSubmit = async () => {
     if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
     } else {
